@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แบบบันทึกความเสี่ยง · ระบบรายงานความเสี่ยง</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;family=Prompt:wght@500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div style="min-height: 100vh; background: linear-gradient(180deg, #FFFFFF 0%, #F1F7FF 40%, #E2EFFF 100%); font-family: 'IBM Plex Sans Thai', sans-serif; color: #0F2A4A">
+
+<header style="background: rgba(255,255,255,0.85); border-bottom: 1px solid #E1ECF8; backdrop-filter: blur(8px)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+<div style="display: flex; align-items: center; gap: 12px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #3B8BEB, #1E6FD9); color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"></path><path fill="#1E6FD9" d="M10.8 7.5h2.4v3.3h3.3v2.4h-3.3v3.3h-2.4v-3.3H7.5v-2.4h3.3z"></path></svg>
+</div>
+<div>
+<div style="font-family: Prompt, sans-serif; font-weight: 600; font-size: 17px">ระบบรายงานความเสี่ยง</div>
+<div style="font-size: 13px; color: #5B7491">โรงพยาบาลพะเยา · กลุ่มงานเทคนิคการแพทย์</div>
+</div>
+</div>
+<nav style="display: flex; flex-wrap: wrap; gap: 6px">
+<a href="index.html" style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; background: #E6F1FF; color: #1E6FD9; font-weight: 600; font-size: 15px">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5v4h4v2h-4v4h-2v-4H7v-2h4V7h2z"></path></svg>แจ้งความเสี่ยง</a>
+<a href="list.html" style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; color: #33506F; font-size: 15px">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h4v4H3zm6 1h12v2H9zM3 10h4v4H3zm6 1h12v2H9zm-6 5h4v4H3zm6 1h12v2H9z"></path></svg>รายการความเสี่ยง</a>
+<a href="review.html" style="display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 12px; color: #33506F; font-size: 15px">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-1.2 13.6-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z"></path></svg>ทบทวน/รับทราบ</a>
+</nav>
+</div>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; display: flex; flex-direction: column; gap: 24px">
+
+<section style="border-radius: 24px; padding: 32px; background: linear-gradient(120deg, #1E6FD9 0%, #4A9AF0 55%, #A9D2FF 100%); color: #FFFFFF; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 18px 40px rgba(30,111,217,0.22)">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px">
+<div style="display: inline-flex; align-self: flex-start; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,0.2); font-size: 13px; font-weight: 600">
+<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h8l5 5v15H6z"></path></svg>F-LAB-025</div>
+<h1 style="margin: 0; font-family: Prompt, sans-serif; font-size: 34px; font-weight: 600; line-height: 1.3">แบบบันทึกความเสี่ยง</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.6; color: #EAF4FF">กรอกข้อมูลให้ครบทั้ง 5 ส่วน แล้วกด “ส่งรายงาน” ระบบจะแจ้งผู้จัดการคุณภาพเพื่อลงนามรับทราบ</p>
+</div>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<div style="background: rgba(255,255,255,0.18); border-radius: 16px; padding: 14px 18px; min-width: 140px">
+<div style="font-size: 13px; color: #EAF4FF">สถานะ</div>
+<div style="font-size: 18px; font-weight: 600">ร่างรายงาน</div>
+</div>
+<div style="background: rgba(255,255,255,0.18); border-radius: 16px; padding: 14px 18px; min-width: 140px">
+<div style="font-size: 13px; color: #EAF4FF">เลขที่รายงาน</div>
+<div style="font-size: 18px; font-weight: 600">[สร้างอัตโนมัติ]</div>
+</div>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<aside style="flex: 1 1 240px; max-width: 300px; background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 8px 24px rgba(15,42,74,0.05)">
+<div style="font-size: 13px; font-weight: 600; color: #5B7491; padding: 0 8px 8px">ขั้นตอนการกรอก</div>
+<a href="#s1" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 12px; color: #0F2A4A"><span style="width: 30px; height: 30px; border-radius: 50%; background: #1E6FD9; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">1</span>รายละเอียดเหตุการณ์</a>
+<a href="#s2" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 12px; color: #0F2A4A"><span style="width: 30px; height: 30px; border-radius: 50%; background: #E6F1FF; color: #1E6FD9; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">2</span>สาเหตุการเกิดความเสี่ยง</a>
+<a href="#s3" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 12px; color: #0F2A4A"><span style="width: 30px; height: 30px; border-radius: 50%; background: #E6F1FF; color: #1E6FD9; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">3</span>การดำเนินการแก้ไข</a>
+<a href="#s4" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 12px; color: #0F2A4A"><span style="width: 30px; height: 30px; border-radius: 50%; background: #E6F1FF; color: #1E6FD9; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">4</span>ผลการแก้ไข</a>
+<a href="#s5" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 12px; color: #0F2A4A"><span style="width: 30px; height: 30px; border-radius: 50%; background: #E6F1FF; color: #1E6FD9; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 14px">5</span>ระดับความเสี่ยง</a>
+<div style="margin-top: 10px; padding: 14px; border-radius: 14px; background: linear-gradient(135deg, #F2F8FF, #E3F0FF); font-size: 13px; line-height: 1.6; color: #33506F; display: flex; gap: 10px">
+<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="flex: none; color: #1E6FD9"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
+<span>รายงานได้โดยไม่ต้องระบุตัวตนผู้ป่วย เน้นข้อเท็จจริง ไม่กล่าวโทษบุคคล</span>
+</div>
+</aside>
+
+<form style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+
+<section style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl" style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><path fill="currentColor" fill-rule="evenodd" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2zm12 8H5v9h14v-9z"></path></svg>วันที่รายงานความเสี่ยง</span><input class="fld" type="date" value="2026-11-27"></label>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl" style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><path fill="currentColor" d="M3 21V8l9-5 9 5v13h-6v-6H9v6H3z"></path></svg>หน่วยงาน</span><select class="fld"><option>งานห้องปฏิบัติการ (LAB)</option><option>[หน่วยงานอื่น]</option></select></label>
+<label style="display: flex; flex-direction: column; gap: 8px"><span class="lbl" style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5v5.4l3.6 2.1-1 1.7L11 13.5V7h2z"></path></svg>วันเวลาที่เกิดเหตุ</span><input class="fld" type="datetime-local"></label>
+</section>
+
+<section id="s1" style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #E6F1FF, #CFE4FF); color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"></path><path fill="#FFFFFF" d="M8 11h8v1.8H8zm0 4h6v1.8H8z"></path></svg></div>
+<div><div style="font-size: 13px; color: #5B7491">ส่วนที่ 1</div><h2 style="margin: 0; font-family: Prompt, sans-serif; font-size: 20px; font-weight: 600">รายละเอียดของเหตุการณ์</h2></div>
+</div>
+<textarea class="fld" aria-label="รายละเอียดของเหตุการณ์" placeholder="เกิดอะไรขึ้น ที่ไหน เมื่อไร พบได้อย่างไร"></textarea>
+<div style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1.5px dashed #BBD6F5; border-radius: 12px; color: #33506F; font-size: 14px; background: #F7FBFF">
+<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><path fill="currentColor" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 12h14l-4.5-6-3.5 4.5-2.5-3L5 17z"></path></svg>แนบรูปภาพ/เอกสารประกอบ (ถ้ามี)</div>
+</section>
+
+<section id="s2" style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #E6F1FF, #CFE4FF); color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="3"></circle><path fill="currentColor" d="m14.6 16.7 2.1-2.1 5 5-2.1 2.1z"></path></svg></div>
+<div><div style="font-size: 13px; color: #5B7491">ส่วนที่ 2</div><h2 style="margin: 0; font-family: Prompt, sans-serif; font-size: 20px; font-weight: 600">สาเหตุการเกิดความเสี่ยง</h2></div>
+</div>
+<textarea class="fld" aria-label="สาเหตุการเกิดความเสี่ยง" placeholder="ปัจจัยที่ทำให้เกิดเหตุ เช่น ขั้นตอนงาน เครื่องมือ การสื่อสาร สภาพแวดล้อม"></textarea>
+</section>
+
+<section id="s3" style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #E6F1FF, #CFE4FF); color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.6 7.2a5.6 5.6 0 0 1-7.4 5.3l-7.3 7.3a2.2 2.2 0 0 1-3.1-3.1l7.3-7.3a5.6 5.6 0 0 1 6.7-7.1l-3.3 3.3.6 2.8 2.8.6 3.3-3.3c.3.5.4 1 .4 1.5z"></path></svg></div>
+<div><div style="font-size: 13px; color: #5B7491">ส่วนที่ 3</div><h2 style="margin: 0; font-family: Prompt, sans-serif; font-size: 20px; font-weight: 600">การดำเนินการแก้ไข</h2></div>
+</div>
+<textarea class="fld" aria-label="การดำเนินการแก้ไข" placeholder="สิ่งที่ทำทันทีหลังพบเหตุ และมาตรการป้องกันไม่ให้เกิดซ้ำ"></textarea>
+</section>
+
+<section id="s4" style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #E6F1FF, #CFE4FF); color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"></circle><path fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m7.5 12.3 3 3 6-6.2"></path></svg></div>
+<div><div style="font-size: 13px; color: #5B7491">ส่วนที่ 4</div><h2 style="margin: 0; font-family: Prompt, sans-serif; font-size: 20px; font-weight: 600">ผลการแก้ไข</h2></div>
+</div>
+<textarea class="fld" aria-label="ผลการแก้ไข" placeholder="ผลลัพธ์หลังแก้ไข ปัญหาหมดไปหรือยัง ต้องติดตามต่อหรือไม่"></textarea>
+</section>
+
+<section id="s5" style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #E6F1FF, #CFE4FF); color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2z"></path><path fill="#FFFFFF" d="M11 9h2v6h-2zm0 7.5h2v2h-2z"></path></svg></div>
+<div><div style="font-size: 13px; color: #5B7491">ส่วนที่ 5</div><h2 style="margin: 0; font-family: Prompt, sans-serif; font-size: 20px; font-weight: 600">ระดับความเสี่ยง</h2></div>
+</div>
+<div style="display: flex; gap: 4px; padding: 4px; border-radius: 14px; background: #EEF5FD">
+<button type="button" id="tabClinic" style="display: flex; align-items: center; gap: 8px; border: 0; cursor: pointer; font: inherit; font-size: 15px; padding: 10px 16px; border-radius: 10px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-8.5-5.2-8.5-11.2A4.8 4.8 0 0 1 12 6.6a4.8 4.8 0 0 1 8.5 3.2C20.5 15.8 12 21 12 21z"></path></svg>ด้านคลินิก (Clinic)</button>
+<button type="button" id="tabNon" style="display: flex; align-items: center; gap: 8px; border: 0; cursor: pointer; font: inherit; font-size: 15px; padding: 10px 16px; border-radius: 10px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 21V5l8-3 8 3v16h-5v-5H9v5H4zm4-12h2V7H8zm6 0h2V7h-2zm-6 4h2v-2H8zm6 0h2v-2h-2z"></path></svg>ด้านอื่นๆ (Non clinic)</button>
+</div>
+</div>
+
+<div id="levels" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px"></div>
+
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; padding: 16px; border-radius: 16px; background: linear-gradient(90deg, #EAF4FF, #F7FBFF)">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.2 14.6-4.3-4.3 1.4-1.4 2.9 2.9 5.7-5.7 1.4 1.4-7.1 7.1z"></path></svg>
+<span style="font-size: 15px; color: #33506F">ระดับที่เลือก</span>
+<span style="padding: 6px 14px; border-radius: 999px; color: #FFFFFF; font-weight: 600" id="selCode"></span>
+<span style="font-size: 15px; flex: 1 1 300px" id="selDesc"></span>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #E1ECF8; border-radius: 20px; padding: 24px; box-shadow: 0 8px 24px rgba(15,42,74,0.05); display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-end">
+<label style="flex: 1 1 280px; display: flex; flex-direction: column; gap: 8px"><span class="lbl" style="display: flex; align-items: center; gap: 8px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="color: #1E6FD9"><circle cx="12" cy="7.5" r="4.5" fill="currentColor"></circle><path fill="currentColor" d="M3 21a9 9 0 0 1 18 0z"></path></svg>ลงชื่อ ผู้รายงาน/ผู้ดำเนินการ</span><input class="fld" type="text" value="[ชื่อจากบัญชีผู้ใช้]"></label>
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<button type="button" style="display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 20px; border-radius: 14px; border: 1.5px solid #BBD6F5; background: #FFFFFF; color: #1E6FD9; font: inherit; font-weight: 600; font-size: 15px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3h13l4 4v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm3 2v5h9V5H7zm5 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path></svg>บันทึกร่าง</button>
+<a href="list.html" style="display: flex; align-items: center; gap: 8px; min-height: 48px; padding: 0 24px; border-radius: 14px; background: linear-gradient(135deg, #3B8BEB, #1E6FD9); color: #FFFFFF; font-weight: 600; font-size: 15px; box-shadow: 0 10px 22px rgba(30,111,217,0.3)"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2 21 23 12 2 3v7l15 2-15 2z"></path></svg>ส่งรายงาน</a>
+</div>
+</section>
+
+<section style="border-radius: 20px; padding: 20px 24px; background: rgba(255,255,255,0.7); border: 1.5px dashed #BBD6F5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 50%; background: #E6F1FF; color: #1E6FD9; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-1.2 13.6-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z"></path></svg></div>
+<div><div style="font-weight: 600">ส่วนลงนามรับทราบ (ผู้จัดการคุณภาพ)</div><div style="font-size: 14px; color: #5B7491">นายภาณุพงศ์ ฟูแสง · ผู้จัดการคุณภาพ — ลงนามหลังผู้รายงานส่งแล้ว</div></div>
+</div>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: #FFF4E0; color: #8A4F00; font-size: 14px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 5v5.4l3.6 2.1-1 1.7L11 13.5V7h2z"></path></svg>รอรับทราบ</span>
+</section>
+
+</form>
+</div>
+</main>
+</div>
+<script src="assets/main.js"></script>
+</body>
+</html>
